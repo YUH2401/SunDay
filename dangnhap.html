@@ -11,7 +11,7 @@
 </head>
 
 <body>
-   <header>
+    <header>
         <div class="nav">
             <div class="logo">
                 <h2>Sunday</h2>
@@ -46,55 +46,56 @@
 
         </div>
     </header>
-    <Dangnhap class="dangnhap-ky">
-        <div class="login-container">
-            <h2>Đăng Nhập</h2>
-            <form action="#" method="post" class="login-form">
-                <label for="username">Tên Đăng Nhập:</label>
-                <input type="text" id="username" name="username" required>
-
-                <label for="password">Mật Khẩu:</label>
-                <input type="password" id="password" name="password" required>
-
-                <button type="submit" class="login-button">Đăng Nhập</button>
-            </form>
-            <p class="register-link">Chưa có tài khoản? <a href="dangky.html">Đăng Ký</a></p>
-        </div>
-    </Dangnhap>
-        <footer class="vd-footer">
-
-        <div class="vd-footer-grid">
-
-            <div class="vd-footer-left">
-                <h2 class="logo">Sunday</h2>
-                <p>Tạp chí điện tử Tri Thức</p>
-                <p>Cơ quan chủ quản: SMH Studio</p>
-                <p>Giấy phép báo chí số: xxx/GP-BTTTT</p>
-                <p>Tổng biên tập: Nguyễn Đan Huy</p>
-                <br>
-                <div class="vd-footer-icons">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-tiktok"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-linkedin"></i>
+    <main>
+        <div class="container" id="container">
+            <div class="form-container sign-up">
+                <form>
+                    <h1>Tạo tài khoản</h1>
+                    <div class="social-icon">
+                        <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>Sử dụng email của bạn để đăng kí</span>
+                    <input type="text" placeholder="Tên đăng nhập" />
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Mật khẩu" />
+                    <button>Đăng Ký</button>
+                </form>
+            </div>
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Đăng nhập</h1>
+                    <div class="social-icon">
+                        <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>Sử dụng email của bạn để đăng nhập</span>
+                    <input type="email" placeholder="Email" />
+                    <input type="password" placeholder="Mật khẩu" />
+                    <a href="#">Quên mật khẩu?</a>
+                    <button>Đăng Nhập</button>
+                </form>
+            </div>
+            <div class="tongle-container">
+                <div class="tongle">
+                    <div class="tongle-panel tongle-left">
+                        <h1>Chào Mừng Trở Lại!</h1>
+                        <p>Nhập thông tin của bạn</p>
+                        <button class="hidden" id="login">Đăng Nhập</button>
+                    </div>
+                    <div class="tongle-panel tongle-right">
+                        <h1>Chào Mừng Bạn!</h1>
+                        <p>Đăng ký thông tin của bạn</p>
+                        <button class="hidden" id="register">Đăng ký</button>
+                    </div>
                 </div>
             </div>
-
-            <div class="vd-footer-right">
-                <p>Hỗ trợ</p>
-                <ul>
-                    <li><a href="#">Trung tâm hỗ trợ</a></li>
-                    <li><a href="#">Nhóm thiết kế</a></li>
-                    <li><a href="#">Chính sách bảo mật</a></li>
-                    <li><a href="#">Điều khoản</a></li>
-                </ul>
-            </div>
-
         </div>
-
-    </footer>
-
+    </main>
     <script>
         const slider = document.querySelector('.card-books ul');
         const nextBtn = document.querySelector('.next-btn');
@@ -123,8 +124,8 @@
             const menu = document.getElementById("mobileMenu");
             menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
         }
-
     </script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
