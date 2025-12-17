@@ -63,27 +63,23 @@
 
                 <div class="vd-right-item">
                     <img src="assets/img/dl2.jpg">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta fugiat magni cum! Consectetur
-                        itaque </p>
+                    <p>Hôm nay trời nắng, chim hót vang khắp phố phường. </p>
                 </div>
 
 
                 <div class="vd-right-item">
                     <img src="assets/img/dl2.jpg">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta fugiat magni cum! Consectetur
-                        itaque </p>
+                    <p>Sáng nay trời trong xanh, gió nhẹ thổi qua hàng cây rì rào. </p>
                 </div>
 
 
                 <div class="vd-right-item">
                     <img src="assets/img/dl2.jpg">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta fugiat magni cum! Consectetur
-                        itaque </p>
+                    <p>Sáng nay trời trong xanh, gió nhẹ thổi qua hàng cây rì rào. </p>
                 </div>
                 <div class="vd-right-item">
                     <img src="assets/img/dl2.jpg">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta fugiat magni cum! Consectetur
-                        itaque </p>
+                    <p>Sáng nay trời trong xanh, gió nhẹ thổi qua hàng cây rì rào. </p>
                 </div>
             </aside>
 
@@ -151,37 +147,35 @@
 
         </footer>
 
-            <script>
-        const slider = document.querySelector('.card-books ul');
-        const nextBtn = document.querySelector('.next-btn');
-        const prevBtn = document.querySelector('.prev-btn');
-        const items = document.querySelectorAll('.card-books ul li');
-        const itemWidth = 240; // width + gap
-        let currentIndex = 0;
+        <script>
+            const slider = document.querySelector('.card-books ul');
+            const nextBtn = document.querySelector('.next-btn');
+            const prevBtn = document.querySelector('.prev-btn');
+            const items = document.querySelectorAll('.card-books ul li');
+            const itemWidth = 240; // width + gap
+            let currentIndex = 0;
 
-        function updateSlider() {
-            const maxIndex = items.length - 1;
-            const offset = currentIndex * itemWidth;
-            slider.style.transform = `translateX(-${offset}px)`;
-        }
+            function updateSlider() {
+                const maxIndex = items.length - 1;
+                const offset = currentIndex * itemWidth;
+                slider.style.transform = `translateX(-${offset}px)`;
+            }
 
-        nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % items.length; // quay vòng
-            updateSlider();
-        });
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % items.length; // quay vòng
+                updateSlider();
+            });
 
-        prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + items.length) % items.length; // quay vòng ngược
-            updateSlider();
-        });
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + items.length) % items.length; // quay vòng ngược
+                updateSlider();
+            });
 
-        function toggleMenu() {
-            const menu = document.getElementById("mobileMenu");
-            menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
-        }
-
-
-    </script>
+            function toggleMenu() {
+                const menu = document.getElementById("mobileMenu");
+                menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+            }
+        </script>
 
     </body>
 
